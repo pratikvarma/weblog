@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+  <b>Short:</b>
+  <%= @post.short %>
+</p>
+
+<p>
+  <b>Detail:</b>
+  <%= @post.detail %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @post.created_at %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%= join_tags(@post) %>
+</p>
+
+<br />
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>
